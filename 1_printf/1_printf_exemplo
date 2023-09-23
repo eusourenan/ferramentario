@@ -1,0 +1,125 @@
+Já que tudo tem um começo, comecemos:
+
+```c
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("Hello World!\n");
+	return (0);
+}
+```
+
+O exemplo acima mostra um código simples que é feito para mostrar uma mensagem na tela. 
+
+Essa ação de mostrar a mensagem na tela será chamada de **printar** daqui pra frente.
+
+A função printf é a nossa amiga que nos ensina muito sobre a vida. Ela printa o que você inserir nela.
+
+int	main(void)
+{
+	printf("Sua frase aqui.\n");
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%d\n", 42);
+	return (0);
+}
+
+int main(void)
+{
+	printf("%d\n", -42);
+	return (0);
+}
+
+int main(void)
+{
+	printf("%d\n", 0);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%d\n", 2147483648);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%d\n", -2147483649);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%c\n", 'a');
+	return (0);
+}
+
+int main(void)
+{
+	printf("%c\n", 97);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%c\n", '!');
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%f\n", 3.14);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%f\n", 3,14);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%f\n", -3.42);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%f\n", 0.00000000);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%f\n", 3.77777777777777777);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%ld\n", 2147483648);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%ld\n", 9223372036854775807);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%x\n", 10);
+	return (0);
+}
+
+int	main(void)
+{
+	printf("%X\n", 10);
+	return (0);
+}
