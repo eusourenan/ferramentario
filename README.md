@@ -1,2 +1,5 @@
-# ferramentatio
-Um inventário de ferramentas de programção. Para quem quer programar e ter (pelo menos por hora) um canto centralizado com ferramentas úteis.
+# Ferramentário
+
+Olá para você. ~Te amo! :heart:~ 
+
+Espero que aqui seja um lugar que te ajude a dar os primeiros passos na programação, um reforço enquanto você aprende e um 
