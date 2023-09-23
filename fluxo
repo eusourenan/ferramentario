@@ -1,0 +1,94 @@
+Fazer fluxo como se estivesse explicado a outrem.
+
+Fluxo original: 
+
+Legenda -> ? (Ainda não tenho certeza, vale a pena colocar?)
+- Tópico: (representa o tópico em questão)
+	Tudo que estiver com tabulação embaixo do tópico, pertence ao tópico acima.
+
+Para todos os tópicos, textos e imagens devem ser apresentados juntos. 
+? As imagens mostram o que o texto está explicando.
+? O texto explica o que ocorre na imagem
+? Ambos
+
+- printf: 
+	Separar por flags (%d em uma página, %c em outra página, assim por diante)
+
+- Variáveis
+	Explicar a diferença de signed e unsigned. 
+	? Para todos os tipos, declarar com signed antes e depois dizer que o padrão é sem a palavra signed
+	Separar por tipos (int em uma página, floats em outra página, assim por diante)
+
+- Condicionais
+	Cada página contém uma explicação que vai aumentando de complexidade conforme avança.
+	Começar com os operadores relacionais (os operadores matemáticos: > < >= <= == !=)
+	{
+		if
+		else
+	}
+	Depois
+	{
+		if
+		else if
+		else
+	}
+	Após isso, explicar os operadores lógicos (&& ||). Usar as mesmas estruturas que foram mostradas acima.
+
+- Iteração/ Estruturas de repetição/ LoOp / While
+	Independente do que acontecer, NÃO USAR, EVITE A TODO CUSTO... VELHO, É SÉRIO!!!!! ESQUEÇA i++ e i--. (continua embaixo)
+	-> Use i = i + 1 e i = i - 1. Não faça a pessoa se enviesar e não saber pensar em fazer decremento e incremento de 3 em 3. (continua embaixo)
+	-> i = i + 3 e i = i - 3. Se você começar usando ++ e -- não vai ajudar.
+	Começar colocando um monte de ifs para mostrar como um código fica gigante. Daí, apresentar o while.
+	Contadores básicos (incrementando e decrementando).
+	Diferenças entre ++i e i++
+
+- Ponteiros
+	?Definição
+	Apelar para strings (clássico)
+	Encontrar caracteres (ft_strchr)
+	Modificar caracteres
+	Modificar caracteres que estão numa lista pré-determinada (que se dane a nova norma da língua portuguesa, #EuSabo) [Comando tr {man tr, amigo(a)}]
+	Mostrar outros tipos. (onde \0 não existe para indicar o fim da parte alocada)
+	Encontrar um número específico dentro de um conjunto
+	Substituir um número numa sequência pré-determinada (#TuSabo)
+	Fazer o usuário percorrer de ponta-a-ponta (#NósSabos) tanto incremental quanto decrementalmente.
+	Malloc
+
+- Função / retorno de função
+	Funções sem retorno
+	Funções com retorno (Explicar que só há 1 E SOMENTE 1 retorno por função).
+	Atribuição de variáveis com retorno de função. (x = ft_strlen("Frase qualquer"))
+	Chamada de função com retornos de chamada de função como argumento. (Continua abaixo)
+	Headers (para arquivos com múltiplas funções)
+	-> (malloc(ft_strlen("Frase qualquer" + 1)))       soma(ft_stlen("frase qualquer"), mdc(a, mult(5 ,4)))
+	? Chamada de funções dentro de while... (matrizes?)
+	? Ponteiros como argumento
+
+Bônus:
+= Type Casting
+	Demostração básica
+	Com ponteiros
+	Use o printf (preguiça define)
+
+= Matrizes
+	Mostrar como a pessoa acessa os caracteres individuais da matriz
+	Percorrer tudo
+	Jogo da velha
+	Formas geométricas
+
+= Listas
+	? Como não conflitar com a libft
+	Definição e explicação inicial
+	Alocação de nós
+	Linkagem de nós
+	Percorrer lista
+	Alterar conteúdos
+	Excluir nós
+
+= Estruturas proibidas na 42.
+	Introdução de cada item e breve explanação (já é assumido que a pessoa que chegou até tem maior autonomia para buscar e aprender por conta)
+	switch - case: no lugar dos ifs
+	ternários:
+	do - while:
+	for:
+	Variáveis globais:
