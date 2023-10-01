@@ -11,3 +11,5 @@ int	main(void)
 	return (0);
 }
 ```
+
+Crie um arquivo, cole esse texto nele e veja a mágica acontecer.
