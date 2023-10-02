@@ -13,3 +13,4 @@ int	main(void)
 ```
 
 Crie um arquivo, cole esse texto nele e veja a mágica acontecer.
+![image.png]
