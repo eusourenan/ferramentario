@@ -1,7 +1,11 @@
 # O Início
 Para começarmos com o pé direito, vamos com o clássico início no aprendizado nas liguagens de programação: mostrar mensagens no terminal.
 
-Nosso comando para printar as coisas na tela, será o ``printf``. Toma um exemplo:
+``Printf`` é uma função que é muito conhecida e consagrada nas linguagens de programação. É uma abreviação de "print formatted", que siginifica ``imprimir formatado``.
+
+Por convenção minha, usarei a palavra "printar" ao invés de "imprimir".
+
+Com tudo dito, nosso primeiro ato será usar a ``printf`` para printar as coisas na tela. Toma um exemplo:
 
 ```c
 #include <stdio.h>
