@@ -28,9 +28,11 @@ O caracter ``\n`` é interpretado como uma quebra de linha. Sem ela, seu texto s
 Por isso, se lembre de colocar o ``\n``.
 
 ## Observação
-Se você usa algum shell com quebra de linha automática, como o ``zsh``, um símbolo de ``%`` será colocado pra dizer que não houve uma quebra de linha no fim da mensagem.
+Se você usa algum shell com quebra de linha automática, como o ``zsh``, um símbolo será colocado pra dizer que não houve uma quebra de linha no fim da mensagem.
 
 ![image](https://github.com/eusourenan/ferramentario/assets/102669882/daf6df09-0010-4885-892e-9b2afb07b213)
+
+![Alt text](image.png)
 
 O seu código continua fazendo a impressão sem uma quebra de linha, mas você pode ter a falsa sensação de estar fazendo uma impressão bonita, por isso, fique atento(a).
 
