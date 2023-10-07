@@ -48,4 +48,4 @@ Sim, você leu direito, ele é interpretado como um único caractere. Pra escrev
 
 ![image](https://github.com/eusourenan/ferramentario/assets/102669882/e9610ba3-a272-4e4b-8ae5-3f1db0aabbc9)
 
-É posível mandar imprimir caracteres especiais (como o nosso amigo \n). Mas também é possível mandar outros tipos de dados para serem impressos. Veja os próximos tópicos e se emocione. 💝
+É posível mandar imprimir caracteres especiais (como o nosso amigo \n). Mas também é possível mandar outros tipos de dados para serem impressos (Afinal, o printf formata o quê?). Veja os próximos tópicos e se emocione. 💝
