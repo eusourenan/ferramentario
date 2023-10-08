@@ -1,3 +1,6 @@
+<p align="center"><< Anterior &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; Próximo >> </p>
+
+
 # Inteiros
 ### <center>Porque outro tipo não seria o mais óbvio pra começar </center>
 
@@ -68,4 +71,4 @@ Mesmo mostrando os outros que existem, essa regra será sempre a mesma.
 
 Vamos ver isso os outros especificadores pra testar isso na prática.
 
-[<< Anterior](printf_1.md) | [Próximo >>](printf_3.md)
+<p align="center"> <a href="printf_1.md"> << Anterior </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="printf_3.md"> Próximo >> </a> </p>
