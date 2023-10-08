@@ -5,7 +5,7 @@ Para começarmos com o pé direito, vamos com o clássico início no aprendizado
 
 Por convenção minha, usarei a palavra "printar" ao invés de "imprimir".
 
-Com tudo dito, nosso primeiro ato será usar a ``printf`` para printar as coisas na tela. Toma um exemplo:
+Com tudo dito, nosso primeiro ato será usar o ``printf`` para printar as coisas na tela. Toma um exemplo:
 
 ```c
 #include <stdio.h>
