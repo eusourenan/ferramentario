@@ -1,9 +1,11 @@
+<p align="center"> <a href="printf_5.md"> << 42 Leal flutuante </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="printf_7.md"> Próximo Tipo >> </a> </p>
+
 # Hexadecimal
 ### <center>Os números que são representados com números e letras </center>
 
 Pensando de forma matemática, existem diferentes formas de representar os números. O número 12, por exemplo, é representado como ``C`` em hexadecimal, é representado como ``14`` em base octal e é representado como ``1100`` em base binária.
 
-Infelizmente, o printf não mostra números em binário. :face_holding_back_tears:
+Infelizmente, o printf não mostra números em binário. 🥺
 
 Porém, ele mostra números na base hexadecimal e na base octal! :partying_face::partying_face::partying_face:
 
@@ -72,7 +74,7 @@ O número 14 foi impresso, assim como dito no início de tudo. Pois, 14 em octal
 
 Dá pra fazer o número em octal e pedir pra mostar em decimal? Dá sim! :v:
 
-Pra isso, o número tem que começar com ``0``. Apenas isso.
+Pra isso, o número tem que começar com ``0``. Apenas isso. Teste e seja feliz com a nova descoberta.
 
 Lembre-se dos caracteres que existem em octal ``8 e 9`` não estão incluídos. Pode testar o que vier à cabeça e ver como o programa se comporta.
 
@@ -81,3 +83,5 @@ Lembre-se dos caracteres que existem em octal ``8 e 9`` não estão incluídos. 
 Entender a conversão de bases é uma coisa bem interessante. Mas deixo essa parte para a sua pesquisa, seja com o buscador de internet ou com os amiguinhos.
 
 Partimos agora para nosso fechamento.
+
+<p align="center"> <a href="printf_5.md"> << Printar o troco do pão </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="printf_7.md"> Próximo Tipo >> </a> </p>

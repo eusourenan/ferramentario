@@ -1,3 +1,5 @@
+<p align="center"> <a href="printf_6.md"> << Número do xizinho </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="printf_8.md"> Próximo Tipo >> </a> </p>
+
 # Unsigned
 ### <center>Quero somente números positivos!</center>
 
@@ -5,7 +7,7 @@ Nesse ponto da jornada, já sabemos que o computador não representa números in
 
 A memória pode ser limitada, mas a criatividade humana supera essas barreiras de modos bem inteligentes.
 
-Uma dessas barreiras foi: ``"Como representar vários números com uma mesma quantidade de memória?"``. A resposta disso [veremos com mais detalhes no próximo tópico.]()
+Uma dessas barreiras foi: ``"Como representar vários números com uma mesma quantidade de memória?"``. 
 
 Para dar um super resumo, eles fizeram a linguagem C entender o número de formas diferentes.
 - Se eles quiserem os números positivos e negativos, existe um jeito certo de lidar com o número.
@@ -17,6 +19,8 @@ Daí que em inglês chamamos os números de ``signed`` quando tem diferenças de
 E chamamos de ``unsigned`` quando os números são apenas positivos.
 
 Todos os exemplos anteriores lidaram com números ``signed``. Esse tópico vai lidar com números ``unsigned``.
+
+[Num momento futuro](../2_variaveis/variaveis_2_copy.md) veremos com mais detalhes como isso está acontecendo.
 
 Para testarmos, segue o exemplo:
 ```c
@@ -78,7 +82,7 @@ O número máximo e o número mínimo é definido pela linguagem e depende o tip
 
 Colocando -1 como no exemplo, pedimos pra ele voltar 1 número, começando do zero.
 
-Se colocar -2 ele volta dois números. Se colocar -3, volta 3 números, e assim por diante.
+Se colocar -2 ele volta dois números, começando do zero. Se colocar -3, volta 3 números, e assim por diante.
 
 O mesmo efeito ocorre com números ``signed``. Veja um exemplo:
 
@@ -103,8 +107,10 @@ Esses efeitos de "voltar para os limites dos números do relógio" tem nomes.
 
 Octal ``(%o)`` e hexadecimal ``(%x)`` são tratados como números ``unsigned``. Caso você tenha testado antes e estranhado o resultado grandão, agora você entende melhor o que acontece.
 
-Os números ``unsigned`` vieram como uma alternativa para printar números maiores, mas com os programadores tendo limitações de memória.
+Os números ``unsigned`` vieram como uma alternativa para printar números maiores, porque os computadores tinham muitas limitações de memória.
 
 O tempo passou e os computadores evoluíram. Conseguimos mais memória e processamento. Os programadores não pensaram em aumentar os intervalos disponíveis?
 
 Não só pensaram, como fizeram! Para mais detalhes, vamos para o próximo tópico.
+
+<p align="center"> <a href="printf_6.md"> << Número com letra junto </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="printf_8.md"> EVOLUÇÃO! >> </a> </p>

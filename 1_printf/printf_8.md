@@ -1,3 +1,5 @@
+<p align="center"> <a href="printf_7.md"> << Sem sinalizadores </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="../2_variaveis/variaveis_1.md"> Próximo Tipo >> </a> </p>
+
 # Long
 ### <center>Superando os limites marcados... (com novos limites)</center>
 
@@ -91,3 +93,7 @@ Números dos tipos ``float``, ``double`` e ``long double`` não podem ser ``unsi
 Para compensar esse desconhecimento, passamos para as cenas dos próximos episódios. Neles, irei contar como usar ``variáveis``. Uma coisa que vai te acompanhar e muito nos seus dias de código. 
 
 Vem comigo, se alegre, bora cantar uma música aleatória e aprender mais sobre o que a linguagem C nos proporciona.
+
+Se quiser mais informações de como o printf funciona clique [aqui](https://www.man7.org/linux/man-pages/man3/printf.3.html).
+
+<p align="center"> <a href="printf_7.md"> << Sem sinalizadores </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="../2_variaveis/variaveis_1.md"> Hora das variáveis >> </a> </p>
