@@ -24,6 +24,8 @@ Sem os apóstrofos, teríamos esse erro:
 
 <Erro de variável não declarada>
 
+Falaremos sobre esse erro no momento de explicar variáveis. Por enquanto, só basta saber que teremos que colocar apóstrofos para o computador entender que queremos uma letra.
+
 As aspas duplas (chamarei apenas de aspas daqui pra frente), são usadas para indicar textos maiores que 1 caractere. No próximo tópico falo mais sobre isso.
 
 <Exemplo com aspas simples e dupla>

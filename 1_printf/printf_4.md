@@ -31,9 +31,9 @@ Veja esse exemplo:
 
 Ele reclama porque usamos apóstrofos. Isso é como dizer para o programa que você está mandando um único caractere, mas na hora que o progama é compilado, o compilador percebe que tem mais de um caractere ali. Essa contradição gera o erro que pode ser visto.
 
-Nós vemos um erro porque existe um jeito específico de lidar com as strings. Sendo assim, a forma de representar também é diferente.
+Nós vemos um erro porque, para a linguagem C, existe um jeito específico de lidar com as strings. Sendo assim, a forma de representar também é diferente.
 
-Por isso, use sempre aspas (``" "``) para o ``%s`` e você evitará dores de cabeça.
+Por isso, use sempre aspas (``" "``) para o ``%s``, apóstrofos (``' '``) para o ``%c`` e você evitará dores de cabeça.
 
 E sim, você pegou bem a ideia: o 's' vem de ``string``.
 
@@ -43,4 +43,4 @@ Os detalhes maiores [serão vistos depois.]() Por hora, aproveite o fato de voc�
 
 Também aproveite para ver o próximo tipo, os números reais (famosos números com vírgula).
 
-<p align="center"> <a href="printf_3.md"> << Camarada, o Char </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="printf_5.md"> Também tem os imaginários? >> </a> </p>
+<p align="center"> <a href="printf_3.md"> << Camarada, o Char </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="printf_5.md"> Hora de calcular o troco do pão? >> </a> </p>

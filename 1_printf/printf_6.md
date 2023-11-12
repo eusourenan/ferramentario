@@ -76,7 +76,7 @@ Dá pra fazer o número em octal e pedir pra mostar em decimal? Dá sim! :v:
 
 Pra isso, o número tem que começar com ``0``. Apenas isso. Teste e seja feliz com a nova descoberta.
 
-Lembre-se dos caracteres que existem em octal ``8 e 9`` não estão incluídos. Pode testar o que vier à cabeça e ver como o programa se comporta.
+Lembre-se dos caracteres que existem em octal (``8 e 9`` não estão incluídos). Pode testar o que vier à cabeça e ver como o programa se comporta.
 
 <Erro de octal e hexadecimal?>
 

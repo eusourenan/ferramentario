@@ -27,7 +27,7 @@ int	main(void)
 }
 ```
 
-Mas, e se quisermos o número mesmo, ao invés dessa fórmula escrita?
+Mas, e se quisermos printar o número mesmo, ao invés dessa fórmula escrita?
 
 Usaremos a formatação do printf! :sunglasses:
 
@@ -97,7 +97,7 @@ Troque o ``%d`` de lugar, mude a mensagem e veja por você.
 
 ## E o que é '%d'?
 
-Da mesma forma que a ``\``, que foi comentada antes, o caractere de ``%`` indica que algo diferente vai ser printado. A diferença entre as duas é que itens escritos com ``\`` são escritos na hora. Por exemplo, nosso amado ``\n``.
+Da mesma forma que a ``\``, que foi comentada antes, o caractere de ``%`` indica que algo diferente vai ser printado. A diferença entre as duas é que itens escritos com ``\`` são valores fixos escritos na hora. Por exemplo, nosso amado ``\n``.
 
 Já os itens com ``%`` serão substituídos com os valores enviados após a mensagem. O printf vai converter os valores para texto e printar para a gente.
 
@@ -111,12 +111,12 @@ Por que a letra 'd'? É a abreviação da palavra ``dígito``. Porque os número
 
 Mas ele também funciona com a letra 'i' (abreviação de ``inteiro``). Basta mudar ``%d`` por ``%i`` nos códigos que você está testando e você vai ver que ele printa a mesma coisa.
 
-[Uma tabela com alguns tipos](tipos_de_especificadores.md) foi colocada por aqui para você revisar e testar. Iremos falar mais sobre cada tipo por aqui. Por enquanto, saiba que você acabou de ver os números inteiros.
+[Uma tabela com alguns tipos](tipos_de_especificadores.md) foi colocada para você revisar e testar. Iremos falar mais sobre cada tipo por aqui. Por enquanto, saiba que você acabou de ver os números inteiros.
 
 Essa é a parte formatada da ``printf``! :partying_face:
 
 ## Lembrete
-``Os especificadores S͟E͟M͟P͟R͟E devem estar no primeiro argumento.``
+``A porcentagem com os especificadores S͟E͟M͟P͟R͟E deve estar com a mensagem.``
 
 Mesmo mostrando os outros que existem, essa regra será sempre a mesma.
 

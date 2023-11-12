@@ -107,7 +107,7 @@ Esses efeitos de "voltar para os limites dos números do relógio" tem nomes.
 
 Octal ``(%o)`` e hexadecimal ``(%x)`` são tratados como números ``unsigned``. Caso você tenha testado antes e estranhado o resultado grandão, agora você entende melhor o que acontece.
 
-Os números ``unsigned`` vieram como uma alternativa para printar números maiores, porque os computadores tinham muitas limitações de memória.
+Os números ``unsigned`` vieram como uma alternativa para printar números maiores usando uma memória limitada, porque os computadores tinham muitas limitações de memória.
 
 O tempo passou e os computadores evoluíram. Conseguimos mais memória e processamento. Os programadores não pensaram em aumentar os intervalos disponíveis?
 

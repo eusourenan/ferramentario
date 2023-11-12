@@ -50,11 +50,19 @@ Sim, você leu direito, ele é interpretado como um único caractere. Pra escrev
 
 A ``\`` é usada para representar alguns caracteres especiais ([o que fará mais sentido quando explicarmos o char](printf_3_copy.md)). O ``n`` é usado para dizermos que queremos uma nova linha.
 
-Se quisermos imprimir ``Dia de comemorar! \o/``, teremos que colocar ``\\`` no printf. 
+Se quisermos imprimir ``Dia de comemorar! \o/``, teremos que colocar ``\\`` no printf.
+
+```c
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("Dia de comemorar! \\o/\n");
+	return (0);
+}
+```
 
 Colocar 2 ``\`` para imprimir apenas uma é feito assim pra função saber diferenciar quando queremos uma quebra de linha e quando queremos apenas uma ``\`` printada na tela.
-
-<Exemplo com a rraba>
 
 E o ``\n`` não precisa ser escrito apenas no final da mensagem ele pode ser usado em qualquer canto. Ele fará a impressão mais bonita, caso queiramos.
 

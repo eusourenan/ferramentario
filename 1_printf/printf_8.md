@@ -37,7 +37,7 @@ int	main(void)
 
 Uaaaaaaau! Que número gigantesco eu coloquei aqui, não é mesmo?!
 
-Ah! Neste ponto de evolução, você já consegue entender os valores que podem ou não ser colocados ali. Confio em ti no fundo do meu coração. :orange_heart:
+Ah! Neste ponto de evolução, você já consegue entender os valores que podem ou não ser colocados ali. Confio em ti para testar vários valores com todo o meu coração. :orange_heart:
 
 Pense em ``%ld`` como abreviação de ``long digit``.
 
@@ -94,6 +94,6 @@ Para compensar esse desconhecimento, passamos para as cenas dos próximos episó
 
 Vem comigo, se alegre, bora cantar uma música aleatória e aprender mais sobre o que a linguagem C nos proporciona.
 
-Se quiser mais informações de como o printf funciona clique [aqui](https://www.man7.org/linux/man-pages/man3/printf.3.html).
+Se quiser mais informações que não foram ditas de como o printf funciona, clique [aqui](https://www.man7.org/linux/man-pages/man3/printf.3.html).
 
 <p align="center"> <a href="printf_7.md"> << Sem sinalizadores </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="../2_variaveis/variaveis_1.md"> Hora das variáveis >> </a> </p>
