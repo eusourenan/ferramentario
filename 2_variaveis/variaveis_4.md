@@ -1,30 +1,59 @@
-# String
+<p align="center"> <a href="variaveis_3.md"> << Contando inteiro </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_5.md"> Próximo >> </a> </p>
 
-Strings serão aprofundadas no tópico sobre ponteiros. 
+# Char
 
-Por hora, vamos ver a declaração:
+Continuando nossos exemplos com os tipos, apresentamos o tipo ``signed char``:
 
 ```c
 #include <stdio.h>
 
 int	main(void)
 {
-	signed char	*variavel;
+	signed char	variavel;
 
-	variavel = "Tem uma string na variável";
-	printf("Qual a mensagem? '%s'\n", variavel);
+	variavel = 76;
+	printf("A letra da vez é %c\n", variavel);
 	return (0);
 }
 ```
 
-Por que não ser ``signed string`` ou ``signed str``? 
+[Como foi dito antes](../1_printf/printf_3.md), nos exemplos da printf, o char na verdade é um número convertido para caractere.
 
-Sendo bem sincero, foi uma escolha das pessoas que fizeram a liguagem. 
+Nós vemos letra porque o printf fez a conversão pra gente.
 
-Mas, tem uma lógica, ``string é uma sequência de caracteres``. Isso facilita para a montagem dos ponteiros (que explicarei mais tarde).
+Se pedirmos para ver um inteiro com o valor que existe em um signed char, vemos:
 
-Tem 2 valores que a string pode receber:
-- NULL
-- A frase que você deseja
+```c
+#include <stdio.h>
 
-Ela é bem direta ao ponto.
+int	main(void)
+{
+	signed char	variavel;
+
+	variavel = 76;
+	printf("A letra da vez é %d\n", variavel);
+	return (0);
+}
+```
+
+- **Se é assim, por que não deixar apenas as variáveis do tipo int e pronto?**
+
+Em questão de economia de memória, faz toda a diferença você ter uma variável que tem o menor tamanho possível. Esse é o caso do nosso tipo ``signed char``. Ele tem o menor tamanho (1 byte) e é o tipo que cabe menos números nele.
+
+Variáveis de tipo ``signed char`` podem receber valores que vão de -128 até 127.
+
+Serve perfeitamente para imprimir caracteres na tela, pois cada letra individual terá o tamanho de 1 byte.
+
+Lembrando que  as letras serão impressas conforme a tabela ASCII, o ``%c`` do printf respeita isso.
+
+Os números negativos, por exemplo, não serão impressos como algo que nós vamos entender.
+
+Veja o exemplo:
+
+<exemplo de impressão com a variável recebendo o valor -1>
+
+Caso você queira ver uma letra, respeite a tabela ASCII. Caso queira usar apenas os números. O intervalo é o que foi citado antes.
+
+Com a parte de ``signed char`` finalizada, partimos para os tipo ``unsigned``.
+
+<p align="center"> <a href="variaveis_3.md"> << Inteiros! </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_5.md"> Joga o sem sinal no peito do pai >> </a> </p>

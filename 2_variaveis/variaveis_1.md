@@ -1,6 +1,15 @@
+<p align="center"> <a href="../1_printf/printf_8.md"> << Volta pro final do printf, plase </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_2.md"> Próximo Tipo >> </a> </p>
+
 # Os tipos de variáveis
 
-Imagine o caso de você não ter o valor em mente, mas sabe a conta que resolve seu problema:
+Quando conversamos sobre o printf, falamos que os números poderiam ter tipos e que nós usamos as letras para que o printf entenda qual o tipo do número.
+
+E mais, quando colocávamos os valores nos exemplos, a gente tinha 100% de clareza sobre o valor que iria ser impresso.
+
+Exemplos:
+```c
+printf("A resposta é: %d\n", 42);
+```
 
 ```c
 #include <stdio.h>
@@ -13,41 +22,81 @@ int	main(void)
 }
 ```
 
-<print da resposta>
+Para entender qual a utilidade de variáveis, imagine que você fez algo de errado em algum código.
 
-Como dá pra ver, você pode digitar a fórmula. O resultado vai ser calculado.
+```c
+#include <stdio.h>
 
-O resultado da fórmula é que será enviado como argumento para o printf.
+int	main(void)
+{
+	printf("Pedro tem %d anos\n", 37);
+	printf("O dobro da idade de Pedro é %d\n", 21 * 2);
+	returxn (0);
+}
+```
+Num código assim, é fácil mexer. Também é fácil de corrigir. Basta alterar o valor que está errado e pronto!
 
-No final, terá apenas um único resultado, independente da fórmula que você mandar.
+Mas...
 
-<print com alguma fórmula que vier à cabeça e que seja bem grande e/ou complexa>
+- **E se a gente precisasse usar essa fórmula em mais prints?**
 
-**E se a gente precisasse usar essa fórmula em mais prints?**
+Dá pra fazer um simples ``Ctrl + C, Ctrl + V`` e ajustar as mensagens.
 
-Dá pra fazer um simples ``Ctrl + C, Ctrl + V``.
+Quantas vezes forem necessárias fazer isso.
 
 <print pra confirmar a frase acima>
 
-E se eu precisasse mudar algo na fórmula porque está errado?
+- **E se eu precisasse mudar algo na fórmula porque está errado?**
 
-Como você está imaginando, você teria que mudar em todos os printf que você tivesse usado aquela fórmula.
+Como você está imaginando, você teria que mudar em todos os printfs que você tivesse usado aquela fórmula errada.
 
-Tem algum jeito mais fácil? Sim! Podemos criar variáveis:
+<mais um print>
+
+- **Tem algum jeito mais fácil?**
+
+Sim! Podemos criar variáveis:
 
 <Substituir a fórmula problema pela variável que recebe o valor que queremos>
 
-Vamos falar do que aconteceu. Primeiro, uma variável foi criada. Chamamos isso de ``declaração`` de variável:
+# O rolê das variáveis
+
+Da mesma forma que o printf substitui o ``%d`` pelo número que você manda como argumento, a palavra ``caramba`` será substituída pelo número que definimos na linha ~~.
+
+Vamos detalhar o que aconteceu:
+
+- Primeiro, uma variável foi criada na linha ~~. Chamamos isso de ``declaração`` de variável:
 
 <Parte da declaração da variável>
 
-Depois, inserimos um valor nessa variável. Essa parte é chamada de ``atribuição`` da variável:
+Para uma variável ser declarada, devemos colocar o ``tipo`` da variável, depois o nome da variável. Isso SEMPRE será nessa ordem.
+
+Com isso, temos uma variável que pode ser usada em vários lugares. :v:
+
+Ela pode ter qualquer nome [desde que respeite as regras de nome de variável (no fim da página).](#regras-de-declaração-de-variáveis)
+
+- Depois da declaração, inserimos um valor nessa variável. Essa parte é chamada de ``atribuição`` da variável:
 
 <Atribuição>
 
-E por fim, usamos a variável:
+Como foi dito uns parágrafos acima, a variável será substituída pelo valor que ela armazena. Mas qual é o valor que tem na variável?
 
-<Os printfs>
+A ``Atribuição`` diz a resposta. O valor que terá na variável, será o valor que colocarmos depois do igual.
+
+Para atribuir um valor à variável você SEMPRE deve colocar o igual e dizer qual é o valor que a variável terá.
+
+Caso você não atribua nenhum valor à variável, ela fica com um valor aleatório que o sistema que dá. Muitas vezes é o número zero, mas isso não é uma regra que vale sempre e pode gerar alguns erros dependendo do que o seu código faz. 
+
+Por isso, SEMPRE atribua algum valor para suas variáveis.
+
+Nos textos futuros, posso trocar ``atribuir à variável`` por: "armazenar na variável", "colocar na variável", "inicializar a variável" e talvez "inserir na variável". Todos esses termos se referem à atribuição. :heart:
+
+- E por fim, com a variável declarada e com valor atribuído, usamos a variável:
+
+<Usando a variável>
+
+Em alguns contextos, posso acabar misturando "usar" e "chamar" a variável. As duas palavras se referem ao mesmo contexto da imagem. 
+
+Posso também falar "Pegar o valor da variável". Todos esses termos estão se referindo ao que está na imagem acima.
 
 Toma um exemplo simplificado:
 
@@ -57,7 +106,45 @@ A vantagem é que agora, basta a gente mudar o valor na linha da atribuição qu
 
 Não tem mais re-escrita de código, nem duplicação de uma parte difícil de modificar.
 
-Sendo assim, variável é só um meio de usar um valor que já foi definido antes em outro lugar do código, sem precisar definir o valor de novo.
+Sendo assim, a variável é só um meio de usar um número que já foi definido antes em outro lugar do código, sem precisar ficar escrevendo o mesmo o número de novo.
+
+Recomendo que crie variáveis com o nome que você desejar, troque o que você quiser no código e perceba o que acontece.
+
+Lembre-se apenas de respeitar o tipo quando usar o printf.
+
+Use ``%d`` quando sua variável for ``signed int``, ``%f`` quando for ``signed float`` e assim por diante.
+
+## Mas quais são os tipos que existem?
+
+Veja a tabela:
+
+|Tipo da variável|Pode ser signed?|Pode ser unsigned?
+:--:|:--:|:--:|
+|int		|✅	|✅
+|char		|✅	|✅
+|float		|✅	|❌
+|long		|✅	|✅
+|double		|✅	|❌
+|long double|✅	|❌
+
+A tabela foi um meio rápido de explicar que podemos criar variáveis do tipo:
+- signed int
+- unsigned int
+- signed char
+- unsigned char
+- signed float
+- signed long
+- unsigned long
+- signed double
+- signed long double
+
+Sua(s) variável(is) pode(m) ter qualquer um dos 9 tipos.
+
+Os intervalos dos números que podem ser representados e qual o especificador do printf para cada tipo, pode ser vista na [tabela de especificadores]() vista no tópico do ``printf``.
+
+Isso finaliza a introdução às variáveis.
+
+Os próximos tópicos tratam dos tipos de variáveis que temos em C.
 
 ## Regras de Declaração de Variáveis
 
@@ -65,20 +152,19 @@ Sendo assim, variável é só um meio de usar um valor que já foi definido ante
 
   - Nesse exemplo: ``signed int`` (inteiro com sinal) é o tipo e ```` é o nome da variável.
 
--  Variáveis não podem ter acento, não podem começar com número e não podem ter caracteres especiais além do ``_`` (underline).
+-  Variáveis não podem ter acento, não podem ter espaços, não podem começar com número e não podem ter caracteres especiais além do ``_`` (underline).
 
-   - Exemplos de nomes de variáveis válidas:
-     - variavel
-     - _teste
-     - _teste2
-	  - mesclando_t3xt0_c0m_num3r02
+	- Exemplos de nomes de variáveis válidas:
+		- variavel
+		- _teste
+		- _teste2
+		- mesclando_t3xt0_c0m_num3r02
 
-	- Exemplos errados:
-	  - 1teste
-	  - $com(cara@
-	  - um-teste-qualquer
-	  - 1234
+	- Exemplos de nomes de variáveis errados:
+		- 1teste
+		- $com(cara@
+		- um-teste-qualquer
+		- 1234
+		- minha variável
 
-Os próximos tópicos tratam dos tipos de variáveis que temos em C.
-
-<p align="center"> <a href="../1_printf/printf_5.md"> << Anterior </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_2.md"> Próximo >> </a> </p>
+<p align="center"> <a href="../1_printf/tipos_de_especificadores.md"> << Tabela de tipos </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_2.md"> Próximo >> </a> </p>
