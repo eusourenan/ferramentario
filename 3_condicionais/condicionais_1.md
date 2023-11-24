@@ -64,7 +64,7 @@ Isso ocorre porque antes de ser feito o printf, fizemos uma pergunta: ``"O núme
 
 <print do numero \>= 0>
 
-A comparação é uma comparação direta: "5 é maior ou igual a zero?"
+A comparação é direta: "5 é maior ou igual a zero?"
 
 Pra essa pergunta, apenas duas repostas são possíveis: Sim e Não. Ou ele é 'maior ou igual a zero', ou ele não é.
 
@@ -84,6 +84,8 @@ Quando fazemos um if, seguimos uma estrutura assim:
 if (condição)
 ```
 Essa estrutura é formada pela palavra ``if`` seguida de parênteses e a condição deve estar dentro dos parênteses.
+
+Como o computador é igual a uma calculadora, a escrita sempre será como a descrição acima. E a condição é o que define o que será executado.
 
 - **Sobre as condições:**
 	
@@ -146,6 +148,6 @@ Esses 6 operadores são todas as possibilidades que os programadores nos deram. 
 	}
 	```
 
-Essa estrutura é chamada de condicional porque, para executar os comandos que estão no escopo do if, a condição tem que ser verdadeira.
+Essa estrutura é chamada de condicional porque, os comandos dependem da condição do if para serem executados, ou não.
 
 Essa é a introdução às condicionais.
