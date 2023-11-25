@@ -1,4 +1,4 @@
-<p align="center"> <a href="../1_printf/printf_8.md"> << Volta pro final do printf, plase </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_2.md"> Próximo Tipo >> </a> </p>
+<p align="center"> <a href="../1_printf/printf_8.md"> << Volta pro final do printf, please </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_2.md"> Próximo Tipo >> </a> </p>
 
 # Os tipos de variáveis
 
@@ -88,15 +88,9 @@ Caso você não atribua nenhum valor à variável, ela fica com um valor aleató
 
 Por isso, SEMPRE atribua algum valor para suas variáveis.
 
-Nos textos futuros, posso trocar ``atribuir à variável`` por: "armazenar na variável", "colocar na variável", "inicializar a variável" e talvez "inserir na variável". Todos esses termos se referem à atribuição. :heart:
-
 - E por fim, com a variável declarada e com valor atribuído, usamos a variável:
 
 <Usando a variável>
-
-Em alguns contextos, posso acabar misturando "usar" e "chamar" a variável. As duas palavras se referem ao mesmo contexto da imagem. 
-
-Posso também falar "Pegar o valor da variável". Todos esses termos estão se referindo ao que está na imagem acima.
 
 Toma um exemplo simplificado:
 
@@ -113,6 +107,18 @@ Recomendo que crie variáveis com o nome que você desejar, troque o que você q
 Lembre-se apenas de respeitar o tipo quando usar o printf.
 
 Use ``%d`` quando sua variável for ``signed int``, ``%f`` quando for ``signed float`` e assim por diante.
+
+
+## Observações
+
+	Nos textos futuros, posso trocar ``atribuir à variável`` por: "armazenar na variável", "colocar na variável", "inicializar a variável" e talvez "inserir na variável". 
+
+	Todos esses termos se referem à atribuição. :heart:
+
+	Em alguns contextos, posso acabar misturando "usar" e "chamar" a variável. As duas palavras se referem ao mesmo contexto da imagem. 
+
+	Posso também falar "Pegar o valor da variável". Todos esses termos estão se referindo ao que está na imagem acima.
+
 
 ## Mas quais são os tipos que existem?
 
@@ -154,13 +160,13 @@ Os próximos tópicos tratam dos tipos de variáveis que temos em C.
 
 -  Variáveis não podem ter acento, não podem ter espaços, não podem começar com número e não podem ter caracteres especiais além do ``_`` (underline).
 
-	- Exemplos de nomes de variáveis válidas:
+	- Exemplos de nomes de variáveis válidas ✅:
 		- variavel
 		- _teste
 		- _teste2
 		- mesclando_t3xt0_c0m_num3r02
 
-	- Exemplos de nomes de variáveis errados:
+	- Exemplos de nomes de variáveis errados ❌:
 		- 1teste
 		- $com(cara@
 		- um-teste-qualquer

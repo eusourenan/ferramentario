@@ -2,6 +2,8 @@
 
 # Inteiros
 
+Com os tipos explicados nos tópicos anteriores, resta apenas ver como usá-los. Para os inteiros, veja o exemplo:
+
 ```c
 #include <stdio.h>
 

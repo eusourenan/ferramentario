@@ -2,7 +2,9 @@
 
 # String
 
-Partindo para o que interessa, vamos ver a declaração:
+Declaramos números de tudo quanto foi jeito, vimos os pequenos, médios, grandes e até com ponto, mas agora é um novo momento: HORA DE VER TEXTO NA VARIÁVEEEEEEEELLLL!!!!  (Vai Brasil!!! \o/)
+
+Se não acredita, veja o exemplo:
 
 ```c
 #include <stdio.h>

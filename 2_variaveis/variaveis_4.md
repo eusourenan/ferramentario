@@ -56,4 +56,4 @@ Caso você queira ver uma letra, respeite a tabela ASCII. Caso queira usar apena
 
 Com a parte de ``signed char`` finalizada, partimos para os tipo ``unsigned``.
 
-<p align="center"> <a href="variaveis_3.md"> << Inteiros! </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_5.md"> Joga o sem sinal no peito do pai >> </a> </p>
+<p align="center"> <a href="variaveis_3.md"> << Inteiros! </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_5.md"> Joga o unsigned no peito do pai >> </a> </p>

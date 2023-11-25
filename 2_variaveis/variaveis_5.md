@@ -89,6 +89,6 @@ int	main(void)
 }
 ```
 
-Unsigned continua sendo os números positivos seguindo o que foi [explicado anteriormente](variaveis_2_copy.md).
+Unsigned continua sendo os números positivos seguindo o que foi [explicado anteriormente](variaveis_2.md).
 
 <p align="center"> <a href="variaveis_4.md"> << Cadê o char? </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_6.md"> Variáveis pra contar o troco >> </a> </p>

@@ -43,6 +43,6 @@ Um lembrete é que octal e hexadecimal são entendidos com variáveis ``unsigned
 
 Isso pode ser feito se temos certeza que nosso código nunca vai processar algo gigantesco e que poderia gerar erros. Pois, facilita na escrita e a gente já tem uma ideia do resultado esperado.
 
-Por fim, mas não menos importante, vamos falar do tipo de variável que suporta texto inteiro.
+Por fim, mas não menos importante, vamos falar do tipo de variável que suporta textos.
 
 <p align="center"> <a href="variaveis_6.md"> << Quero um ponto a mais na vida </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_8.md"> Texto, textinho, textão >> </a> </p>

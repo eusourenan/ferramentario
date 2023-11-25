@@ -2,11 +2,11 @@
 
 # Float
 
-Bom, o padrão é o mesmo que já conhecemos:
+Em relação à declaração de variáveis, o padrão é o mesmo que já vimos várias vezes:
 ```
 tipo_da_variável nome_da_variável
 ```
-Partiu pro exemplo:
+Eis que agora vamos ver o tipo ``signed float``, mas esse vem com um diferencial. Dá uma olhada:
 
 ```c
 #include <stdio.h>
@@ -92,4 +92,4 @@ unsigned long var;
 
 Falta apenas as explicações de valores em octal, hexadecinal e variáveis so tipo string.
 
-<p align="center"> <a href="variaveis_2.md"> << Os independentes de sinais </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_4.md"> Os números diferentões >> </a> </p>
+<p align="center"> <a href="variaveis_5.md"> << Os independentes de sinais </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_7.md"> Os números diferentões >> </a> </p>

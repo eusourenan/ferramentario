@@ -51,7 +51,7 @@ Se quisermos uma variável do tipo ``unsigned char``, o computador vai nos dar u
 
 <Mesma figura que foi mostrada antes>
 
-Então como raios ele sabe qual é qual?
+- **Então como raios ele sabe qual é qual?**
 
 Simples! O primeiro bit (da esquerda pra direita) vai ser usado para dizer se o número é positivo ou negativo quando a variável é ``signed`` (por isso é sinalizada).
 
@@ -69,6 +69,6 @@ Daí que ele consegue representar diferentes quantidades de números usando a me
 
 Se você veio direto do tópico do tipo unsigned, recomendo [voltar](../1_printf/printf_7.md). Existem outras coisas que você tem que ver ainda.
 
-E pra quem fica, vamos falar deles, os famosinhos:
+E pra quem fica, vamos falar deles, os famosinhos: os inteiros! Famoso int!
 
 <p align="center"> <a href="variaveis_1.md"> << Volta pro início </a> &#8195;&#8195;&#8195;&#8195; | &#8195;&#8195;&#8195;&#8195; <a href="variaveis_3.md"> Vamos conhecer os famosinhos >> </a> </p>
