@@ -1,8 +1,6 @@
-# If-else
+## O "if"
 
-No tópico anterior, conversamos sobre como o if pode "direcionar" o que vai ser executado, simplesmente indo para uma direção, ou outra.
-
-Como exemplos, tínhamos:
+Para a explicação, iremos usar o mesmo código-exemplo que o tópico anterior:
 
 ```c
 #include <stdio.h>
@@ -11,10 +9,7 @@ int	main(void)
 {
 	int	numero = 5;
 
-	if (numero >= 0)
-	{
-		printf ("O número %d é positivo.", numero);
-	}
+	printf ("O número %d é positivo.", numero);
 	if (numero < 0)
 	{
 		printf ("O número %d é negativo.", numero);
@@ -23,129 +18,98 @@ int	main(void)
 }
 ```
 
-E
+Você pode perceber que ele não executou a mensagem dizendo que o número 5 é negativo. 
+
+Isso ocorre porque antes de ser feito o print dizendo que o número é negativo, fizemos uma pergunta: ``"O número é negativo?"``.
+
+Para ser mais exato a pergunta foi: ``"5 é menor que zero?"``. A resposta: não. Cinco não é menor que zero.
+
+Com a resposta dessa pergurta, podemos definir o que será executado e o que não será executado. Fazendo códigos mais completos.
+
+Nesse momento, é um passo pequeno que estamos fazendo. Mas na verdade essa ferramenta simples de comparação nos abre um mar de possibilidades.
+
+Podemos fazer códigos complexos, separar ele por partes e decidir que parte dele será executada com base nas condições que escolhermos.
+
+Porque, não importa o quão grande seja seu programa, muito provavelmente terá um ou mais if nele. Saber como usá-lo vai te dar muitas opções de como resolver problemas. Seja de níveis fáceis ou difíceis.
+
+Vamos então destrinchar como funciona os if's.
+
+### Estrutura do if
+
+Quando fazemos um if, seguimos uma estrutura assim:
 
 ```c
-#include <stdio.h>
-
-int	main(void)
-{
-	int number = 5;
-
-	if (number == 5)
-	{
-		printf("Tenho uma mensagem escrita.\n");
-		printf("Ela diz que o número é um número primo e é o número 5.\n");
-		printf("Tudo isso ao mesmo tempo.\n");
-	}
-	if (number != 5)
-	{
-		printf("As coisas mudaram de figura.\n");
-		printf("O número é difente do 5. Como pode?!\n");
-	}
-	return (0);
-}
+if (condição)
 ```
 
-Vendo esses dois exemplos e analisando eles matematicamente, você pode se perguntar: "Tem algum jeito melhor de escrever isso?" A resposta é: sim.
+Essa estrutura é formada pela palavra ``if`` seguida de parênteses e a condição deve estar dentro dos parênteses.
 
-A parte de "escrever melhor" vem como dúvida porque se o número é igual a 5, não tem como ele ser diferente de 5. Se o número é maior ou igual a zero, não tem como ele ser menor que zero. Um if exclui o outro.
+A condição será a pergunta que queremos saber naquele exato momento. Obrigatoriamente ela deve ter somente duas respostas possíveis: sim ou não.
 
-Como há esse caso em que ele entra no escopo de um if, ou entra no escopo de outro if, verificar os dois casos sempre, parece meio... "burro demais".
-
-A estrutura if-else ajuda a escrita a ficar melhor, além de ajudar o computador a executar mais rápido em alguns casos.
-
-- **O funcionamento de vários ifs**
+- **Sobre as condições:**
 	
-	Quando você tem um código como os códigos de exemplo acima, o programa SEMPRE irá verificar as duas condições. Se ele entrar no primeiro if, ele ainda assim vai verificar se o segundo é verdadeiro, mesmo que não precise.
+	Para fazer uma condição em um if, lembre-se: as respostas são feitas com apenas duas respostas possíveis (sim ou não).
 
-	Isso significa que se você cria um código grande com mais de 100 verificações e existe momentos que ele precisaria verificar apenas 5, esse programa faria mais de 95 verificações sem a menor necessidade. E esse comportamento tem um custo no sistema.
+	Garantir que isso fosse mantido fez os criadores da linguagem C criarem o if de um modo simples: ela compara números. Isso mesmo que você acabou de ler, números, apenas números e nada além de números.
 
-- **A Solução**
+	No exemplo de código que vimos antes, comparamos a variável ``numero`` com zero.
 
-	A criação da estrutura de if-else resolve o problema, porque o computador junta as duas condições "em um mesmo bloco".
+	Isso não muda nem em programas avançados. Então matenha isso no seu coração: ``"͟U͟m͟a͟ ͟c͟o͟n͟d͟i͟ç͟ã͟o͟ ͟é͟ ͟u͟m͟a͟ ͟c͟o͟m͟p͟a͟r͟a͟ç͟ã͟o͟ ͟d͟e͟ ͟n͟ú͟m͟e͟r͟o͟s͟.͟"``.
 
-	<Figura pra ilustrar?>
+	Conseguimos comparar os números com os seguintes operadores:
 
-	Vejamos um exemplo:
+	|Operador| Significado|
+	|:--:|:--:|
+	|<	| Menor que ...
+	|<=	| Menor ou iqual a ...
+	|>	| Maior que ...
+	|>=	| Maior ou igual a ...
+	|==	| Igual a ...
+	|!=	| Diferente de ...
 
+	Vejamos alguns exemplos:
+
+		if (5 < 5) // 5 é menor que 5
+		if (5 <= 5) // 5 é menor ou igual a 5
+		if (5 > 5) // 5 é maior que 5
+		if (5 >= 5) // 5 é maior ou igual a 5
+		if (5 == 5) // 5 é igual a 5
+		if (5 != 5) // 5 é diferente de 5
+
+	Esses 6 operadores são todas as possibilidades que os programadores nos deram. Aprendendo eles agora, eles serão os mesmo para sempre.
+
+- **E as chaves que aparecem depois?**
+
+	As chaves (``{`` e ``}``) dizem onde o if começa e termina. Isso é feito para o caso de você ter vários comandos que dependem de uma condição.
+
+	De modo técnico, dizemos que o conteúdo está dentro do escopo do if (ou simplesmente, "dentro do if"). Ainda podemos dizer que o conteúdo "pertence" ao if.
+	
+	Exemplo:
 	```c
 	#include <stdio.h>
 
 	int	main(void)
 	{
-		int	numero = 5;
+		int number = 5;
 
-		if (numero >= 0)
+		if (number == 5)
 		{
-			printf ("O número %d é positivo.", numero);
+			printf("Tenho uma mensagem escrita.\n");
+			printf("Ela diz que o número é um número primo e é o número 5.\n");
+			printf("Tudo isso ao mesmo tempo.\n");
 		}
-		else
+		if (number != 5)
 		{
-			printf ("O número %d é negativo.", numero);
+			printf("As coisas mudaram de figura.\n");
+			printf("O número é difente do 5. Como pode?!\n");
 		}
 		return (0);
 	}
 	```
+	No exemplo acima, apenas uma condição será verdadeira. Afinal, ou ``number`` é igual a 5, ou é diferente de 5. Mude o valores, teste à vontade.
 
-	Basicamente, ele faz apenas uma verificação e executa o bloco de código que precisa ser executado.
-	
-	- Se a condição for verdadeira, ele executa o bloco que está com o ``if``.
-	- Se não for verdadeira, ele executa o bloco de código que está com o ``else``.
+### O nome condicional
 
-Vejamos um outro exemplo com if-else:
+Essa estrutura é chamada de condicional porque, os comandos dependem da condição do if para serem executados, ou não.
 
-```c
-#include <stdio.h>
-
-int	main(void)
-{
-	int	temperatura = 25;
-
-	if (temperatura > 30)
-	{
-		printf ("Está muito quente hoje\n");
-	}
-	else
-	{
-		printf ("Hoje está com um clima agradável\n");
-	}
-	return (0);
-}
-```
-
-Ao juntar os dois blocos, apenas uma verificação precisa ser feita, ao invés de duas. 
-
-Ou ele entra no bloco que está com a condição, ou ele entra no outro bloco de código.
-
-Por ele ter esse comportamento, essa estrutura é chamada de "se - senão".
-- se for isso, execute isso.
-- Senão, execute aquilo.
-
-Simplesmente ter essa estrutura de if-else, corta o tempo de verificação pela metade. ao invés de duas comparações, apenas uma será feita. Pro computador, uma maravilha isso aí.
-
-Lembrando que o if-else também suporta vários comandos em cada bloco.
-
-```c
-#include <stdio.h>
-
-int	main(void)
-{
-	int number = 5;
-
-	if (number == 5)
-	{
-		printf("Tenho uma mensagem escrita.\n");
-		printf("Ela diz que o número é um número primo e é o número 5.\n");
-		printf("Tudo isso ao mesmo tempo.\n");
-	}
-	else
-	{
-		printf("As coisas mudaram de figura.\n");
-		printf("O número é difente do 5. Como pode?!\n");
-	}
-	return (0);
-}
-```
-
-Não há segredos aqui, você está mais apto(a) a fazer códigos com mais complexidade. Criar seus exemplos faz a diferença. Teste e se surpreenda!
+Essa é a introdução às condicionais.
