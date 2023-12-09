@@ -12,59 +12,41 @@ int	main(void)
 	int	numero = 5;
 
 	printf ("O número %d é positivo.", numero);
-	if (numero < 0)
-	{
-		printf ("O número %d é negativo.", numero);
-	}
+	printf ("O número %d é negativo.", numero);
 	return (0);
 }
 ```
 
-E
+Para este caso, temos duas opções de perguntas:
 
 ```c
 #include <stdio.h>
 
 int	main(void)
 {
-	int number = 5;
-
-	if (number == 5)
+	int	numero = 5;
+	if (numero >= 0)
 	{
-		printf("Tenho uma mensagem escrita.\n");
-		printf("Ela diz que o número é um número primo e é o número 5.\n");
-		printf("Tudo isso ao mesmo tempo.\n");
+		printf ("O número %d é positivo.", numero);
 	}
-	if (number != 5)
+	if (numero < 0)
 	{
-		printf("As coisas mudaram de figura.\n");
-		printf("O número é difente do 5. Como pode?!\n");
+		printf ("O número %d é negativo.", numero);
 	}
-	return (0);
 }
 ```
 
-Vendo esses dois exemplos e analisando eles matematicamente, você pode se perguntar: "Tem algum jeito melhor de escrever isso?" A resposta é: sim.
+Como podemos perceber, uma condição automaticamente exclui a outra. Afinal, ou o número é positivo, ou o número é negativo, não tem como ele ser os dois ao mesmo tempo. A não ser que você seja um matemático quântico. 
 
-Pensando matematicamente, você entende que se o número é igual a 5, não tem como ele ser diferente de 5. Se o número é maior ou igual a zero, não tem como ele ser menor que zero. Um if exclui o outro.
+Mesmo que o programa seja simples e tenha essas duas condições; mesmo que essas duas condições sejam excludentes (ou acontece uma, ou acontece outra). O computador comparar cada if para ter certeza do que acontece.
 
-Como há esse caso em que ele entra no escopo de um if, ou entra no escopo de outro if, verificar os dois casos sempre, parece meio... "burro demais".
+Neste nosso programa com apenas dois ifs comparar os dois nem faz tanta diferença. Mas em programas mais completos e complexos, fazer a comparação de todas as possibilidades, encontrar o que você quis e continuar verificando pode ser muito custoso para o sistema. Seu programa pecaria em performace.
 
-A estrutura if-else ajuda a escrita a ficar melhor, além de ajudar o computador a executar mais rápido em alguns casos.
-
-## **O funcionamento de vários ifs**
-
-Quando você tem um código como os códigos de exemplo acima, o programa SEMPRE irá verificar as duas condições. Se ele entrar no primeiro if, ele ainda assim vai verificar se o segundo é verdadeiro, mesmo que não precise.
-
-Isso significa que se você cria um código grande com mais de 100 verificações e existe momentos que ele precisaria verificar apenas 5, esse programa faria mais de 95 verificações sem a menor necessidade. E esse comportamento tem um custo no sistema.
+Nosso foco então está em buscar uma forma de escrever melhor as condições, além fazer o programa parar de ficar perguntando se a condição é verdadeira quando ele já achou a resposta. O ``else`` foi a palavra-chave que os criadores do C deixaram como opção para nós.
 
 ## **A Solução**
 
-A criação da estrutura de if-else resolve o problema, porque o computador junta as duas condições "em um mesmo bloco".
-
-<Figura pra ilustrar?>
-
-Vejamos um exemplo:
+Sei que seria melhor uma introdução, mas vamos colocar o exemplo no começo e explicar os detalhes em seguida:
 
 ```c
 #include <stdio.h>
@@ -85,12 +67,34 @@ int	main(void)
 }
 ```
 
-Basicamente, ele faz apenas uma verificação e executa o bloco de código que precisa ser executado.
-	
+Como foi comentado antes quando estávamos com 2 ifs, as condições eram excludentes, somente uma das duas é que seriam verdadeira.
+
+Com isso em mente, os criadores criaram o que chamamos de "estrutura if-else" (em português, poderíamos traduzir por "se-senão").
+
+A vantagem para a execução é que o computador junta esse conjunto "if-else" como se fosse uma coisa só. O sistema processa mais rápido e fazemos menos comparações.
+
+Um exemplo em português pode deixar um pouco mais claro:
+
+```
+se (numero >= 0)
+{
+	...
+}
+senão
+{
+	...
+}
+```
+
+Apenas para retomar:
+
 - Se a condição for verdadeira, ele executa o bloco que está com o ``if``.
 - Se não for verdadeira, ele executa o bloco de código que está com o ``else``.
 
-Vejamos um outro exemplo com if-else:
+Com esse conhecimento, podemos fazer códigos ainda melhores e que consomem menos tempo de sistema. Agora estamos evoluindo nos passos de programação para construir códigos com maior complexidade! :clap::clap::clap::clap::clap::clap::clap:
+
+
+Para uma melhor fixação do que foi ensinado, vamos ver mais exemplos com if-else:
 
 ```c
 #include <stdio.h>
@@ -110,18 +114,6 @@ int	main(void)
 	return (0);
 }
 ```
-
-Ao juntar os dois blocos, apenas uma verificação precisa ser feita, ao invés de duas. 
-
-Ou ele entra no bloco que está com a condição, ou ele entra no outro bloco de código.
-
-Por ele ter esse comportamento, essa estrutura é chamada de "se - senão".
-- se for isso, execute isso.
-- Senão, execute aquilo.
-
-Simplesmente ter essa estrutura de if-else, corta o tempo de verificação pela metade. ao invés de duas comparações, apenas uma será feita. Pro computador, uma maravilha isso aí.
-
-Lembrando que o if-else também suporta vários comandos em cada bloco.
 
 ```c
 #include <stdio.h>
@@ -145,4 +137,6 @@ int	main(void)
 }
 ```
 
-Não há segredos aqui, você está mais apto(a) a fazer códigos com mais complexidade. Criar seus exemplos faz a diferença. Teste e se surpreenda!
+Com esse conhecimento, podemos controlar muito do que o sistema consegue executar com uma única pergunta. Mas, e se precisarmos trabalhar com algo que não tenha apenas duas possibilidades?
+
+A estrutura "if/ else if/ else" tem a resposta que queremos.

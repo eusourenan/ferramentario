@@ -63,7 +63,7 @@ A condição é a pergunta que fazemos para o computador. Ela sempre deve estar 
 
 - **Mais sobre as condições:**
 	
-	Quando estavam pensando em fazer o if, os programadores queriam fazer perguntas com apenas duas respostas possíveis: sim ou não. É mais fácil de programar sabendo que só há essas duas pssibilidades. ^^
+	Quando estavam pensando em fazer o if, os programadores queriam fazer perguntas com apenas duas respostas possíveis: sim ou não. É mais fácil de programar sabendo que só há essas duas possibilidades. ^^
 
 	Para garantir que esse requisito fosse cumprido, os criadores da linguagem C prepararam o if de um modo simples: ela compara somente números.
 	
@@ -99,47 +99,52 @@ A condição é a pergunta que fazemos para o computador. Ela sempre deve estar 
 
 - **E as chaves que aparecem com o if?**
 
-	As chaves (``{`` e ``}``) são como os parênteses na hora de criar a condição, dizem onde começa e onde termina as instruções.
+	As chaves (``{`` e ``}``) são como os parênteses na hora de criar a condição, dizem onde começam e onde terminam os comandos que iremos executar, caso o if seja verdadeiro.
+
+	De modo mais técnico, chamamos de "bloco" o conjunto de códigos que estão dentro das chaves.
+
+	**Uma curiosidade**: O hábito de dizer o "dentro das chaves" é tão grande que é comum falarmos que o conteúdo está dentro do escopo do if (ou simplesmente, "dentro do if"). Ainda podemos dizer que o conteúdo "pertence" ao if.
+
+Com os itens explicados, nosso if tem essa configuração no final:
+
+```c
+if (condição)
+{
+	#códigos e mais códigos que serão executados
+}
+```
 	
-	A diferença é que as chaves dizem onde começam e onde terminam os comandos que serão executados se o if for verdadeiro. Os parênteses ficam então 
+Para termos algo que pode ser executado, vamos para mais um exemplo com uso de if:
+```c
+#include <stdio.h>
 
-	Chamamos de "bloco" o conjunto de códigos que estão dentro das chaves.
+int	main(void)
+{
+	int number = 5;
 
-	O hábito é tão grande que é comum falarmos que o conteúdo está dentro do escopo do if (ou simplesmente, "dentro do if"). Ainda podemos dizer que o conteúdo "pertence" ao if.
-
-	```c
-	if (condição)
+	if (number == 5)
 	{
-		#códigos e mais códigos que serão executados
+		printf("Tenho uma mensagem escrita.\n");
+		printf("Ela diz que o número é um número primo e é o número 5.\n");
+		printf("Tudo isso ao mesmo tempo.\n");
 	}
-	```
-	
-	Vamos para mais um exemplo:
-	```c
-	#include <stdio.h>
-
-	int	main(void)
+	if (number != 5)
 	{
-		int number = 5;
-
-		if (number == 5)
-		{
-			printf("Tenho uma mensagem escrita.\n");
-			printf("Ela diz que o número é um número primo e é o número 5.\n");
-			printf("Tudo isso ao mesmo tempo.\n");
-		}
-		if (number != 5)
-		{
-			printf("As coisas mudaram de figura.\n");
-			printf("O número é difente do 5. Como pode?!\n");
-		}
-		return (0);
+		printf("As coisas mudaram de figura.\n");
+		printf("O número é difente do 5. Como pode?!\n");
 	}
-	```
-	No exemplo acima, apenas uma condição será verdadeira. Afinal, ou ``number`` é igual a 5, ou é diferente de 5. Mude o valores, teste à vontade.
+	return (0);
+}
+```
+No exemplo acima, apenas uma condição será verdadeira. Afinal, ou ``number`` é igual a 5, ou é diferente de 5. Isso indica que um bloco de código será executado, e outro bloco de código será ignorado.
 
+Com isso o nosso caso inicial de if está explicado.
+
+Há mais casos de if? Sim! Vamos explicar com mais detelhes nos próximos tópicos. ^^
+
+## Para encerrar a introdução
 ### O nome condicional
 
-Essa estrutura é chamada de condicional porque, os comandos dependem da condição do if para serem executados, ou não.
+	Com tudo explicado já dá pra entender, mas vou deixar escrito para que fique fixado no nosso cérebro: o nome técnico é "condicional" porque, para que um comando (ou bloco de comandos) seja executado, a condição do if precisa ser validada e considerada verdadeira.
 
-Essa é a introdução às condicionais.
+Com o que foi explicado até o momento, você consegue criar programas e delimitar que partes serão executadas ou não. Nos próximos, iremos mostrar novas escritas que podem otimizar o entendimento do que ocorre e fazer até com que o computador possa processar as condições mais rapidamente.
