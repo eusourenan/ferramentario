@@ -2,29 +2,40 @@
 
 Olá para você. ~Te amo! :heart:~ 
 
-Algumas vezes você pode ter se deparado com as famosas letras RTFM (Read The Fucking Manual). Traduzindo: "Leia a droga do manual".
+Conto um pouco sobre como surgiu o projeto pra depois falar como ele funciona. Segue um rápido sumário:
 
-Mas, vamos concordar, manuais não são lidos com frequência, eles são HORRÍVEIS, são chatos e parecem dar um nó na nossa mente.
+[A verdade desse projeto](#a-verdade-desse-projeto)\
+[Agradecimentos](#agradecimentos)\
+[Como aproveitar o projeto](#como-aproveitar-o-projeto)\
+[Manda o pix!](#manda-o-pix)
 
-E esse parece ser o padrão...
+## A verdade desse projeto
 
-Porém, em defesa dos manuais bons, existem manuais que podem sim te ensinar bastante, ser até agradáveis de ler e que te fazem entender o conteúdo.
+Sabe quando bate aquela vontade enorme de fazer algo que será útil para X pessoas e vai te encher de satisfação pessoal?
 
-Mas, como os manuais chatos são a maioria, eles vencem. Vamos sempre tratar os manuais como inimigos.
+Resolvi criar esse "inventário de ferramentas", ou como chamei, "Ferramentário" com esse sentimento vindo do fundo coração.
 
-Pra tentar amenizar a dor de ter que aprender tudo se baseando em manuais, resolvi criar esse "inventário de ferramentas", ou como chamei, "Ferramentário".
+A empolgação era tanta e a ambição era tão grande, que o projeto nunca estava perto do que eu imaginava. Em todos os momentos a frase ``"parece que nunca vai ficar perfeito"`` ecoava na minha mente.
 
-Esse projeto foi criado para parecer um manual, mas menos desagradável aos olhos.
+Por vários momentos apaguei e comecei de novo. Noutros, quis apenas apagar esse projeto e fingir que essa ideia nunca existiu. Tudo por conta dessa tal "forma perfeita".
 
-O objetivo daqui é te mostrar como usar alguns conceitos para você conseguir montar suas próprias lógicas.
+E a verdade é que se eu não fizer, posso ter a sensação vaga de que eu era capaz e desisti. No fundo só iria alimentar uma imagem feliz no fundo da minha alma e ficar vivendo na ilusão. 
 
-Como não consigo falar de tudo e aproveitando o espírito da 42, aqui te ofereco ALGUMAS respostas, mas não TODAS as respostas. Você ainda terá que procurar pessoas, pesquisar, olhar fórums e etc.
+E eu não quero viver de ilusões, quero viver de realidade. Não quero alegrias de mentira, quero as de verdade.
 
-A diferença será que, se os conceitos foram entendidos, você irá perguntar coisas específicas, porque você entenderá o básico e saberá implementar por conta própria.
+Por conta disso, resolvi divulgar o que tenho, ao invés de tentar arrumar a todo o momento e tentar chegar numa falsa perfeição que vai estar sempre inalcançável.
 
-Resumindo, o objetivo daqui é fazer você conhecer tão bem as ferramentas básicas que você vai fazer as coisas de modo independente. "Pensou, criou".
+Conforme o tempo passe e eu aprenda a escrever melhor e explicar melhor, eu com certeza vou dar uma melhorada nas partes que desgosto. Mas o lema daqui será "melhor feito do que perfeito".
 
-## Montagem
+Recomendo que você faça o mesmo com projetos que você tenha. Dá um gelo enorme no coração e o frio na barriga faz a gente querer parar. Mas entregar vai ser o melhor pra você ter a certeza do que acontecerá e não viver em ilusões que você mesmo(a) cria.
+
+Ter pessoas que me apoiam a fazer as coisas e que me fazem continuar evoluindo ao invés de me deixarem simplesmente desistir, foi fundamental pra eu dar esse passo. Espero que você tenha pessoas assim na sua vida. Compartilhem seus projetos com elas e aceitem as críticas construtivas.
+
+## Agradecimentos
+
+Gostaria de agradecer à [@GioGardinali](https://github.com/GioGardinali) por me fornecer o apoio, cobrar entregas e ser mais persistente em entregar o projeto do que eu mesmo.
+
+# Como aproveitar o projeto
 
 O ferramentário foi montado de forma estruturada, comece pela pasta 1, depois a pasta 2 e assim por diante.
 
@@ -43,18 +54,14 @@ O momento de praticar é a parte em que você me ajuda e se ajuda ao mesmo tempo
 
 Tenho a maior confiança do mundo em ti. :heart:
 
-## Agradecimentos
-
-Gostaria de agradecer ...
-
 ## Manda o pix!
 
 Espero de verdade que o ferramentário seja útil. Seja para quem está começando a se aventurar na programação, quanto para quem quer apenas revisar alguns conceitos.
 
-Sei que não está perfeito, mas preferi mandar o que tenho ao invés de não mandar nada. Fiz com o maior carinho e espero que você goste.
+Fiz com o maior carinho e espero que você goste.
 
 Se gostou e quiser me mandar um pix, taí o QR Code.
 
-<´imagem do qrcode>
+![Alt text](Pix_PicPay.jpg)
 
 Desde já, uma boa leitura para você e meu muito obrigado!
