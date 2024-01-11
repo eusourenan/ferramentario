@@ -1,6 +1,6 @@
 # Ferramentário
 
-Olá para você. ~Te amo! :heart:~ 
+Olá para você. Te amo! :heart:
 
 Conto um pouco sobre como surgiu o projeto pra depois falar como ele funciona. Segue um rápido sumário:
 
@@ -63,5 +63,7 @@ Fiz com o maior carinho e espero que você goste.
 Se gostou e quiser me mandar um pix, taí o QR Code.
 
 ![Alt text](Pix_PicPay.jpg)
+
+Se quiser copiar e colar a chave aleatória, segue: ``2e95d655-4a4f-40b0-94bc-3482a6dbf013``.
 
 Desde já, uma boa leitura para você e meu muito obrigado!
